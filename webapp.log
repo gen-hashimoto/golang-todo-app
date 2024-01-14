@@ -269,3 +269,245 @@ created by net/http.(*Server).Serve
 2024/01/14 22:26:13 main.go:18: sql: no rows in result set
 2024/01/14 22:29:02 main.go:18: no such column: user_id
 2024/01/14 22:31:48 main.go:18: no such column: name
+2024/01/15 06:01:12 server.go:3217: http: panic serving 127.0.0.1:61167: template: index.html:3: unexpected EOF
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x10048a420, 0xc0000993c0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+golang_udemy/to-do-app/app/controllers.generateHTML({0x100579bf0?, 0xc0001901c0}, {0x0, 0x0}, {0xc0000bfa18?, 0x3, 0x800?})
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/server.go:16 +0x237
+golang_udemy/to-do-app/app/controllers.index({0x100579bf0, 0xc0001901c0}, 0xffffffffffffffff?)
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/route_main.go:21 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc0000c4180?, {0x100579bf0?, 0xc0001901c0?}, 0x100010a28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100579bf0, 0xc0001901c0}, 0xc0000d0300)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009b3b0?}, {0x100579bf0, 0xc0001901c0}, 0xc0000d0300)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0000e2090, {0x100579e48, 0xc00009b2c0})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2024/01/15 06:01:12 server.go:3217: http: panic serving 127.0.0.1:61168: template: index.html:3: unexpected EOF
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x10048a420, 0xc00021c1e0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+golang_udemy/to-do-app/app/controllers.generateHTML({0x100579bf0?, 0xc000220000}, {0x0, 0x0}, {0xc0000b9a18?, 0x3, 0x800?})
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/server.go:16 +0x237
+golang_udemy/to-do-app/app/controllers.index({0x100579bf0, 0xc000220000}, 0xffffffffffffffff?)
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/route_main.go:21 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc0000c4200?, {0x100579bf0?, 0xc000220000?}, 0x100010a28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100579bf0, 0xc000220000}, 0xc0000d0200)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009b4a0?}, {0x100579bf0, 0xc000220000}, 0xc0000d0200)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0000e2120, {0x100579e48, 0xc00009b2c0})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2024/01/15 06:01:12 server.go:3217: http: panic serving 127.0.0.1:61169: template: index.html:3: unexpected EOF
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x10048a420, 0xc00021c3f0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+golang_udemy/to-do-app/app/controllers.generateHTML({0x100579bf0?, 0xc0002201c0}, {0x0, 0x0}, {0xc0000b9a18?, 0x3, 0x800?})
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/server.go:16 +0x237
+golang_udemy/to-do-app/app/controllers.index({0x100579bf0, 0xc0002201c0}, 0xffffffffffffffff?)
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/route_main.go:21 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc000236100?, {0x100579bf0?, 0xc0002201c0?}, 0x100010a28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100579bf0, 0xc0002201c0}, 0xc00025c000)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000206600?}, {0x100579bf0, 0xc0002201c0}, 0xc00025c000)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000202120, {0x100579e48, 0xc00009b2c0})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2024/01/15 06:01:13 server.go:3217: http: panic serving 127.0.0.1:61174: template: index.html:3: unexpected EOF
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x10048a420, 0xc00021c610})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+golang_udemy/to-do-app/app/controllers.generateHTML({0x100579bf0?, 0xc000220380}, {0x0, 0x0}, {0xc0000b9a18?, 0x3, 0x800?})
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/server.go:16 +0x237
+golang_udemy/to-do-app/app/controllers.index({0x100579bf0, 0xc000220380}, 0xffffffffffffffff?)
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/route_main.go:21 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc000236280?, {0x100579bf0?, 0xc000220380?}, 0x100010a28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100579bf0, 0xc000220380}, 0xc00025c100)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000206c30?}, {0x100579bf0, 0xc000220380}, 0xc00025c100)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0002022d0, {0x100579e48, 0xc00009b2c0})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2024/01/15 06:01:14 server.go:3217: http: panic serving 127.0.0.1:61175: template: index.html:3: unexpected EOF
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x10048a420, 0xc00021c810})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+golang_udemy/to-do-app/app/controllers.generateHTML({0x100579bf0?, 0xc000220540}, {0x0, 0x0}, {0xc0000b9a18?, 0x3, 0x800?})
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/server.go:16 +0x237
+golang_udemy/to-do-app/app/controllers.index({0x100579bf0, 0xc000220540}, 0xffffffffffffffff?)
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/route_main.go:21 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc000236300?, {0x100579bf0?, 0xc000220540?}, 0x100010a28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100579bf0, 0xc000220540}, 0xc00025c200)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000206cf0?}, {0x100579bf0, 0xc000220540}, 0xc00025c200)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000202360, {0x100579e48, 0xc00009b2c0})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2024/01/15 06:01:14 server.go:3217: http: panic serving 127.0.0.1:61176: template: index.html:3: unexpected EOF
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x10048a420, 0xc00021ca10})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+golang_udemy/to-do-app/app/controllers.generateHTML({0x100579bf0?, 0xc000220700}, {0x0, 0x0}, {0xc0000b9a18?, 0x3, 0x800?})
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/server.go:16 +0x237
+golang_udemy/to-do-app/app/controllers.index({0x100579bf0, 0xc000220700}, 0xffffffffffffffff?)
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/route_main.go:21 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc000102000?, {0x100579bf0?, 0xc000220700?}, 0x100010a28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100579bf0, 0xc000220700}, 0xc00010a000)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000104090?}, {0x100579bf0, 0xc000220700}, 0xc00010a000)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000106000, {0x100579e48, 0xc00009b2c0})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2024/01/15 06:01:14 server.go:3217: http: panic serving 127.0.0.1:61177: template: index.html:3: unexpected EOF
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x10048a420, 0xc00021cc20})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+golang_udemy/to-do-app/app/controllers.generateHTML({0x100579bf0?, 0xc0002208c0}, {0x0, 0x0}, {0xc0000b9a18?, 0x3, 0x800?})
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/server.go:16 +0x237
+golang_udemy/to-do-app/app/controllers.index({0x100579bf0, 0xc0002208c0}, 0xffffffffffffffff?)
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/route_main.go:21 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc000236800?, {0x100579bf0?, 0xc0002208c0?}, 0x100010a28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100579bf0, 0xc0002208c0}, 0xc00025c300)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000207ec0?}, {0x100579bf0, 0xc0002208c0}, 0xc00025c300)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000202750, {0x100579e48, 0xc00009b2c0})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2024/01/15 06:01:19 server.go:3217: http: panic serving 127.0.0.1:61198: template: index.html:3: unexpected EOF
+goroutine 44 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x10048a420, 0xc000016240})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+golang_udemy/to-do-app/app/controllers.generateHTML({0x100579bf0?, 0xc000116000}, {0x0, 0x0}, {0xc000121a18?, 0x3, 0x800?})
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/server.go:16 +0x237
+golang_udemy/to-do-app/app/controllers.index({0x100579bf0, 0xc000116000}, 0xffffffffffffffff?)
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/route_main.go:21 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc000236980?, {0x100579bf0?, 0xc000116000?}, 0x100010a28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100579bf0, 0xc000116000}, 0xc00025c400)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002b0510?}, {0x100579bf0, 0xc000116000}, 0xc00025c400)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000202900, {0x100579e48, 0xc00009b2c0})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2024/01/15 06:01:49 server.go:3217: http: panic serving 127.0.0.1:61199: template: index.html:3: unexpected EOF
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x10048a420, 0xc0000995c0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+golang_udemy/to-do-app/app/controllers.generateHTML({0x100579bf0?, 0xc000190380}, {0x0, 0x0}, {0xc0000bfa18?, 0x3, 0x800?})
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/server.go:16 +0x237
+golang_udemy/to-do-app/app/controllers.index({0x100579bf0, 0xc000190380}, 0xffffffffffffffff?)
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/route_main.go:21 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x100e96908?, {0x100579bf0?, 0xc000190380?}, 0x100010a28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100579bf0, 0xc000190380}, 0xc00010a100)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000104150?}, {0x100579bf0, 0xc000190380}, 0xc00010a100)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000106090, {0x100579e48, 0xc00009b2c0})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2024/01/15 06:01:49 server.go:3217: http: panic serving 127.0.0.1:61320: template: index.html:3: unexpected EOF
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x10048a420, 0xc000016450})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+golang_udemy/to-do-app/app/controllers.generateHTML({0x100579bf0?, 0xc0001161c0}, {0x0, 0x0}, {0xc000121a18?, 0x3, 0x800?})
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/server.go:16 +0x237
+golang_udemy/to-do-app/app/controllers.index({0x100579bf0, 0xc0001161c0}, 0xffffffffffffffff?)
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/route_main.go:21 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc000102200?, {0x100579bf0?, 0xc0001161c0?}, 0x100010a28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100579bf0, 0xc0001161c0}, 0xc00010a200)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000104780?}, {0x100579bf0, 0xc0001161c0}, 0xc00010a200)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000106240, {0x100579e48, 0xc00009b2c0})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2024/01/15 06:01:49 server.go:3217: http: panic serving 127.0.0.1:61321: template: index.html:3: unexpected EOF
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x10048a420, 0xc000016660})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+golang_udemy/to-do-app/app/controllers.generateHTML({0x100579bf0?, 0xc000116380}, {0x0, 0x0}, {0xc000121a18?, 0x3, 0x800?})
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/server.go:16 +0x237
+golang_udemy/to-do-app/app/controllers.index({0x100579bf0, 0xc000116380}, 0xffffffffffffffff?)
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/route_main.go:21 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc000102380?, {0x100579bf0?, 0xc000116380?}, 0x100010a28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100579bf0, 0xc000116380}, 0xc00010a300)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000104db0?}, {0x100579bf0, 0xc000116380}, 0xc00010a300)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001063f0, {0x100579e48, 0xc00009b2c0})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
