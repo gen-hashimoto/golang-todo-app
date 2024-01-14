@@ -266,3 +266,6 @@ net/http.(*conn).serve(0xc0001982d0, {0x1005751c8, 0xc00007f290})
 	/usr/local/go/src/net/http/server.go:1995 +0x612
 created by net/http.(*Server).Serve
 	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2024/01/14 22:26:13 main.go:18: sql: no rows in result set
+2024/01/14 22:29:02 main.go:18: no such column: user_id
+2024/01/14 22:31:48 main.go:18: no such column: name
