@@ -1,0 +1,268 @@
+2024/01/13 22:07:02 main.go:15: test
+2024/01/13 23:39:57 users.go:33: not enough args to execute query: want 5 got 4
+2024/01/14 08:19:11 todos.go:23: near ")": syntax error
+2024/01/14 08:27:38 todos.go:23: near ")": syntax error
+2024/01/14 16:01:32 server.go:3217: http: panic serving 127.0.0.1:57551: template: no files named in call to ParseFiles
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x100486900, 0xc00008e030})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+golang_udemy/to-do-app/app/controllers.generateHTML({0x100574f70?, 0xc0000c0000}, {0x100475e60, 0x100571310}, {0x0?, 0xc00011fa30?, 0x1000d1966?})
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/server.go:15 +0x21b
+golang_udemy/to-do-app/app/controllers.top({0x100574f70?, 0xc0000c0000?}, 0xffffffffffffffff?)
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc00014c180?, {0x100574f70?, 0xc0000c0000?}, 0x1000116a8?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100574f70, 0xc0000c0000}, 0xc000190000)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000186030?}, {0x100574f70, 0xc0000c0000}, 0xc000190000)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00015a090, {0x1005751c8, 0xc00007f290})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2024/01/14 16:01:33 server.go:3217: http: panic serving 127.0.0.1:57552: template: no files named in call to ParseFiles
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x100486900, 0xc00008e070})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+golang_udemy/to-do-app/app/controllers.generateHTML({0x100574f70?, 0xc0000c01c0}, {0x100475e60, 0x100571310}, {0x0?, 0xc000067a30?, 0x1000d1966?})
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/server.go:15 +0x21b
+golang_udemy/to-do-app/app/controllers.top({0x100574f70?, 0xc0000c01c0?}, 0xffffffffffffffff?)
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc00014c200?, {0x100574f70?, 0xc0000c01c0?}, 0x1000116a8?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100574f70, 0xc0000c01c0}, 0xc00014e100)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007f3e0?}, {0x100574f70, 0xc0000c01c0}, 0xc00014e100)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00015a120, {0x1005751c8, 0xc00007f290})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2024/01/14 16:01:33 server.go:3217: http: panic serving 127.0.0.1:57554: template: no files named in call to ParseFiles
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x100486900, 0xc00008e0b0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+golang_udemy/to-do-app/app/controllers.generateHTML({0x100574f70?, 0xc0000c0380}, {0x100475e60, 0x100571310}, {0x0?, 0xc000063a30?, 0x1000d1966?})
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/server.go:15 +0x21b
+golang_udemy/to-do-app/app/controllers.top({0x100574f70?, 0xc0000c0380?}, 0xffffffffffffffff?)
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000194000?, {0x100574f70?, 0xc0000c0380?}, 0x1000116a8?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100574f70, 0xc0000c0380}, 0xc000190100)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000186120?}, {0x100574f70, 0xc0000c0380}, 0xc000190100)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000198000, {0x1005751c8, 0xc00007f290})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2024/01/14 16:01:33 server.go:3217: http: panic serving 127.0.0.1:57555: template: no files named in call to ParseFiles
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x100486900, 0xc00008e100})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+golang_udemy/to-do-app/app/controllers.generateHTML({0x100574f70?, 0xc0000c0540}, {0x100475e60, 0x100571310}, {0x0?, 0xc000063a30?, 0x1000d1966?})
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/server.go:15 +0x21b
+golang_udemy/to-do-app/app/controllers.top({0x100574f70?, 0xc0000c0540?}, 0xffffffffffffffff?)
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc0000ea200?, {0x100574f70?, 0xc0000c0540?}, 0x1000116a8?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100574f70, 0xc0000c0540}, 0xc0000a0300)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a2300?}, {0x100574f70, 0xc0000c0540}, 0xc0000a0300)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009e360, {0x1005751c8, 0xc00007f290})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2024/01/14 16:01:33 server.go:3217: http: panic serving 127.0.0.1:57556: template: no files named in call to ParseFiles
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x100486900, 0xc00008e150})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+golang_udemy/to-do-app/app/controllers.generateHTML({0x100574f70?, 0xc0000c0700}, {0x100475e60, 0x100571310}, {0x0?, 0xc000064a30?, 0x1000d1966?})
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/server.go:15 +0x21b
+golang_udemy/to-do-app/app/controllers.top({0x100574f70?, 0xc0000c0700?}, 0xffffffffffffffff?)
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc0000ea280?, {0x100574f70?, 0xc0000c0700?}, 0x1000116a8?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100574f70, 0xc0000c0700}, 0xc000190200)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000186180?}, {0x100574f70, 0xc0000c0700}, 0xc000190200)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009e510, {0x1005751c8, 0xc00007f290})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2024/01/14 16:01:34 server.go:3217: http: panic serving 127.0.0.1:57557: template: no files named in call to ParseFiles
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x100486900, 0xc00008e190})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+golang_udemy/to-do-app/app/controllers.generateHTML({0x100574f70?, 0xc0000c08c0}, {0x100475e60, 0x100571310}, {0x0?, 0xc000063a30?, 0x1000d1966?})
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/server.go:15 +0x21b
+golang_udemy/to-do-app/app/controllers.top({0x100574f70?, 0xc0000c08c0?}, 0xffffffffffffffff?)
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc0000ea300?, {0x100574f70?, 0xc0000c08c0?}, 0x1000116a8?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100574f70, 0xc0000c08c0}, 0xc0000a0500)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a24b0?}, {0x100574f70, 0xc0000c08c0}, 0xc0000a0500)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009e5a0, {0x1005751c8, 0xc00007f290})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2024/01/14 16:01:34 server.go:3217: http: panic serving 127.0.0.1:57558: template: no files named in call to ParseFiles
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x100486900, 0xc00008e1e0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+golang_udemy/to-do-app/app/controllers.generateHTML({0x100574f70?, 0xc0000c0a80}, {0x100475e60, 0x100571310}, {0x0?, 0xc000063a30?, 0x1000d1966?})
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/server.go:15 +0x21b
+golang_udemy/to-do-app/app/controllers.top({0x100574f70?, 0xc0000c0a80?}, 0xffffffffffffffff?)
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc0000ea380?, {0x100574f70?, 0xc0000c0a80?}, 0x1000116a8?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100574f70, 0xc0000c0a80}, 0xc0000a0700)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a2690?}, {0x100574f70, 0xc0000c0a80}, 0xc0000a0700)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009e870, {0x1005751c8, 0xc00007f290})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2024/01/14 16:01:39 server.go:3217: http: panic serving 127.0.0.1:57559: template: no files named in call to ParseFiles
+goroutine 30 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x100486900, 0xc00008e240})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+golang_udemy/to-do-app/app/controllers.generateHTML({0x100574f70?, 0xc0000c0c40}, {0x100475e60, 0x100571310}, {0x0?, 0xc000063a30?, 0x1000d1966?})
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/server.go:15 +0x21b
+golang_udemy/to-do-app/app/controllers.top({0x100574f70?, 0xc0000c0c40?}, 0xffffffffffffffff?)
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc0000ea400?, {0x100574f70?, 0xc0000c0c40?}, 0x1000116a8?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100574f70, 0xc0000c0c40}, 0xc0000a0800)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a27e0?}, {0x100574f70, 0xc0000c0c40}, 0xc0000a0800)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009ea20, {0x1005751c8, 0xc00007f290})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2024/01/14 16:01:39 server.go:3217: http: panic serving 127.0.0.1:57560: template: no files named in call to ParseFiles
+goroutine 31 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x100486900, 0xc00018a050})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+golang_udemy/to-do-app/app/controllers.generateHTML({0x100574f70?, 0xc0001ae000}, {0x100475e60, 0x100571310}, {0x0?, 0xc000064a30?, 0x1000d1966?})
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/server.go:15 +0x21b
+golang_udemy/to-do-app/app/controllers.top({0x100574f70?, 0xc0001ae000?}, 0xffffffffffffffff?)
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc0000ea480?, {0x100574f70?, 0xc0001ae000?}, 0x1000116a8?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100574f70, 0xc0001ae000}, 0xc0000a0900)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a28a0?}, {0x100574f70, 0xc0001ae000}, 0xc0000a0900)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009eab0, {0x1005751c8, 0xc00007f290})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2024/01/14 16:01:39 server.go:3217: http: panic serving 127.0.0.1:57561: template: no files named in call to ParseFiles
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x100486900, 0xc000017160})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+golang_udemy/to-do-app/app/controllers.generateHTML({0x100574f70?, 0xc000164000}, {0x100475e60, 0x100571310}, {0x0?, 0xc000068a30?, 0x1000d1966?})
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/server.go:15 +0x21b
+golang_udemy/to-do-app/app/controllers.top({0x100574f70?, 0xc000164000?}, 0xffffffffffffffff?)
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc00014c300?, {0x100574f70?, 0xc000164000?}, 0x1000116a8?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100574f70, 0xc000164000}, 0xc00014e200)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007f4d0?}, {0x100574f70, 0xc000164000}, 0xc00014e200)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00015a1b0, {0x1005751c8, 0xc00007f290})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2024/01/14 16:02:09 server.go:3217: http: panic serving 127.0.0.1:57582: template: no files named in call to ParseFiles
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x100486900, 0xc00018a090})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+golang_udemy/to-do-app/app/controllers.generateHTML({0x100574f70?, 0xc0001ae1c0}, {0x100475e60, 0x100571310}, {0x0?, 0xc000068a30?, 0x1000d1966?})
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/server.go:15 +0x21b
+golang_udemy/to-do-app/app/controllers.top({0x100574f70?, 0xc0001ae1c0?}, 0xffffffffffffffff?)
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc00014c380?, {0x100574f70?, 0xc0001ae1c0?}, 0x1000116a8?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100574f70, 0xc0001ae1c0}, 0xc00014e400)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007f650?}, {0x100574f70, 0xc0001ae1c0}, 0xc00014e400)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00015a360, {0x1005751c8, 0xc00007f290})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2024/01/14 16:03:10 server.go:3217: http: panic serving 127.0.0.1:57605: template: no files named in call to ParseFiles
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x100486900, 0xc00018a0e0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+golang_udemy/to-do-app/app/controllers.generateHTML({0x100574f70?, 0xc0001ae380}, {0x100475e60, 0x100571310}, {0x0?, 0xc000069a30?, 0x1000d1966?})
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/server.go:15 +0x21b
+golang_udemy/to-do-app/app/controllers.top({0x100574f70?, 0xc0001ae380?}, 0xffffffffffffffff?)
+	/Users/Gen/go/src/golang_udemy/to-do-app/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000194200?, {0x100574f70?, 0xc0001ae380?}, 0x1000116a8?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100574f70, 0xc0001ae380}, 0xc000190500)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001863f0?}, {0x100574f70, 0xc0001ae380}, 0xc000190500)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001982d0, {0x1005751c8, 0xc00007f290})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
