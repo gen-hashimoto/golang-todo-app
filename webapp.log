@@ -511,3 +511,5 @@ net/http.(*conn).serve(0xc0001063f0, {0x100579e48, 0xc00009b2c0})
 	/usr/local/go/src/net/http/server.go:1995 +0x612
 created by net/http.(*Server).Serve
 	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2024/01/20 08:53:03 route_auth.go:52: sql: no rows in result set
+2024/01/20 08:53:03 server.go:3217: http: superfluous response.WriteHeader call from golang_udemy/to-do-app/app/controllers.authenticate (route_auth.go:71)
